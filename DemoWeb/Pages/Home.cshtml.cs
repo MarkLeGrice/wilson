@@ -6,10 +6,12 @@ namespace DemoWeb.Pages
     public class HomeModel : PageModel 
     {
         public string Greeting { get; set; }
+        public string Insult { get; set; }
 
         public void OnGet()
         {
-            this.Greeting = "Hello i am injected from the controller!";
+            Greeting = "Hello i am injected from the controller!";
+            Insult = "fuck you";
         }
     }
 }
